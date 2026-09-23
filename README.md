@@ -1,8 +1,8 @@
 ### 1. Financial Time Series & Volatility Modeling (`nasdaq analysis.R`)
-I want to point out that this was a group project (3 people) and it was done for an exam.
-The file thst interest this project is nasdaq analysis
+I want to point out that this was a group project (3 people).
+The file thst interest this project is nasdaq analysis.
 Empirical study analyzing volatility clustering and heavy-tailed dynamics on daily NASDAQ returns (2020–2025) using score-driven and conditional heteroskedasticity models.
-We coded custom the update mechanism from scratch for standard GARCH(1,1), Student-$t$ GARCH, and Beta-$t$-EGARCH without relying on already existing functions in packages.
+We coded custom the update mechanism from scratch for standard GARCH(1,1), Student-t GARCH, and Beta-t-EGARCH without relying on already existing functions in packages.
 Parameters were estimated using constrained quasi-Newton optimization (`nlminb`) with parameter bounds to ensure strict stationarity and positivity conditions.
 Recursive conditional variance and score trajectories were extracted, we verified score densities against normality assumptions, and evaluated 1-step-ahead out-of-sample forecast accuracy using both Mean Squared Error (MSE) and robust Quasi-Likelihood (QLIKE) loss functions.
 
